@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    /* filas*/
+    grid-template-rows: 24% 25% 30% 18%;
+    /* y columnas */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    gap: 1%;
+    /* cantidad de filas */
+    grid-template-areas: 
+    "area1 area1 area1 area1 area1"
+    "area2 area2 area3 area3 area3"
+    "area2 area2 area3 area3 area3"
+    "area4 area4 area4 area4 area4";
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: area1 ;
+    background: linear-gradient(rgba(255, 255, 255, 0.75),rgba(169, 169, 170, 0.75));
+    gap: 25rem;
+    margin: 1rem;
+    border: solid 1px  rgb(0, 0, 0);
+}
+
+/* empieza header */
+.header h1 {
+    font-size: 4rem;
+    margin-left: 10rem;
+    
+}
+
+
+
+.sections a{
+    font-size: 2rem;
+    
+    color: black;
+    background-color: pink;
+    
+    text-decoration: none; 
+    /* margin: 0.2rem;  */
+
+}
+
+.perfil{
+    width: 10rem;
+    border-radius: 20%;
+}
+
+/* termina header */
+
+/* comienza el main y sus 2 contenedores */
+main{
+    grid-area: area2;
+    background-color: rgb(166, 164, 164);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills{
+    display: flex;
+    background-color: white;
+    width: 45rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    
+}
+
+.content-skills{
+    display: flex;
+    margin: 1rem;
+    background:rgba(255, 255, 255, 0.75);
+    width: 45rem;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.content-skills p{
+    width: 25rem;
+    font-size: 1.5rem;
+    
+    padding-bottom: 1rem;
+}
+/* termina */
+
+
+/* comienza el aside y sus imagenes  */
+
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: area3;
+    background-color: rgb(166, 164, 164);
+
+}
+
+aside h3{
+    font-size: 3rem;
+    /* padding: 2rem 1rem; */
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+aside img{
+    width: 15vw;
+    height: 18vh;
+    margin: 0rem 1.5rem;
+    border-radius: 10%;
+    
+}
+.titleProjects{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 2rem;
+    gap: 15.5%;
+    margin-bottom: 2rem;
+    
+}
+
+.titleProjects p {
+    padding: 1rem;
+    background-color: aliceblue;
+    border-radius: 30%;
+}
+/* termina */
+
+footer{
+    border: solid 1px  rgb(0, 0, 0);
+    grid-area: area4;
+    background: linear-gradient(rgba(255, 255, 255, 0.75),rgba(169, 169, 170, 0.75));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 2rem;
+    gap: 20%;
+
+    
+}
+
+
+
+footer a{
+    color: black;
+}
